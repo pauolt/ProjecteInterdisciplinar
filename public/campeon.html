@@ -134,9 +134,6 @@
           Clases: dataClases
         };
 
-        console.log("Clases:", dataClases);
-        console.log("Campeón:", dataCampeon[0]);
-
         let html = $("#modify_campeon_template").render(data);
         $("#app").html(html);
 
@@ -165,7 +162,7 @@
         alert("Campeón modificado correctamente");
         showCampeon();
       },
-      error: function(xhr, status, error){
+      error: function(xhr){
         alert("Error al modificar el campeón: " + xhr.responseText);
       }
     })
@@ -221,7 +218,6 @@
       })
     }
   }
-
 
   $(document).ready(function () {
       router.navigate('/');
