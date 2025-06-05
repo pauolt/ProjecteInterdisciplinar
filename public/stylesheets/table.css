@@ -15,6 +15,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+h2 {
+    text-align: center;
+    color: orange;
+    text-shadow: 0 0 8px orange;
+    margin-bottom: 30px;
+}
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -67,6 +75,11 @@ input[type="submit"]:hover {
     border-color: #00ccff;
     box-shadow: 0 0 15px #00ccff88;
     transform: scale(1.05);
+}
+
+.habilidades-view td a.button {
+    display: block;
+    margin: 4px 0;
 }
 
 .button.warning {
@@ -126,6 +139,13 @@ select {
 .success a {
     color: white;
     text-decoration: none;
+}
+
+body.habilidades-view .button,
+body.habilidades-view button {
+    display: block;
+    width: fit-content;
+    margin-bottom: 8px;
 }
 
 body.habilidades-view .button,
